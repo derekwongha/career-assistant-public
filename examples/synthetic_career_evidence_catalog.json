@@ -1,0 +1,603 @@
+{
+  "person_reference": "SYNTHETIC_FICTIONAL_CANDIDATE_CASEY_PLACEHOLDER",
+  "evidence_items": [
+    {
+      "evidence_id": "RESUME-001",
+      "category": "technical_skill",
+      "capability": "Programming languages",
+      "evidence_statement": "Listed skills: Python, JavaScript, SQL.",
+      "state": "Not assessed",
+      "context": "Technical Skills",
+      "limitations": [
+        "Listed skills only; not independently assessed.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Technical Skills"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-002",
+      "category": "technical_skill",
+      "capability": "Web frameworks",
+      "evidence_statement": "Listed skills: Django, Django REST Framework, React.",
+      "state": "Not assessed",
+      "context": "Technical Skills",
+      "limitations": [
+        "Listed skills only.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Technical Skills"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-003",
+      "category": "technical_skill",
+      "capability": "Databases",
+      "evidence_statement": "Listed skills: MySQL, SQLite.",
+      "state": "Not assessed",
+      "context": "Technical Skills",
+      "limitations": [
+        "Listed skills only.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Technical Skills"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-004",
+      "category": "tool",
+      "capability": "Developer tools",
+      "evidence_statement": "Listed tools: Git, GitHub, VS Code, Postman.",
+      "state": "Not assessed",
+      "context": "Technical Skills",
+      "limitations": [
+        "Listed skills only.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Technical Skills"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-005",
+      "category": "education",
+      "capability": "Diploma",
+      "evidence_statement": "Diploma in Computer Engineering, Example Polytechnic (fictional).",
+      "state": "Not assessed",
+      "context": "Education",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Education"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-006",
+      "category": "education",
+      "capability": "Bootcamp certificate",
+      "evidence_statement": "Certificate in Full-Stack Web Development, Northwind Training Institute (fictional).",
+      "state": "Not assessed",
+      "context": "Education",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Education"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-007",
+      "category": "education",
+      "capability": "Certificate of attendance",
+      "evidence_statement": "Introduction to Cloud Computing — Certificate of Attendance, Northwind Training Institute (fictional).",
+      "state": "Not assessed",
+      "context": "Certifications",
+      "limitations": [
+        "Attendance certificate, not a professional certification.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Certifications"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-008",
+      "category": "employment",
+      "capability": "Operations coordinator",
+      "evidence_statement": "Operations Coordinator, Contoso Facilities Pte. Ltd. (fictional): scheduled maintenance work, kept service records in spreadsheets and coordinated vendors.",
+      "state": "Not assessed",
+      "context": "Professional Experience",
+      "limitations": [
+        "Non-software role.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Professional Experience"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-009",
+      "category": "employment",
+      "capability": "IT helpdesk volunteer",
+      "evidence_statement": "Volunteer IT helpdesk, Fabrikam Community Centre (fictional): set up laptops and answered basic user questions.",
+      "state": "Not assessed",
+      "context": "Professional Experience",
+      "limitations": [
+        "Volunteer, part-time.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Professional Experience"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-010",
+      "category": "project",
+      "capability": "PlantPal",
+      "evidence_statement": "PlantPal (fictional demo project): Django + React app for tracking plant watering schedules.",
+      "state": "Not assessed",
+      "context": "Selected Projects",
+      "limitations": [
+        "Portfolio project, not commercial work.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Selected Projects"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-011",
+      "category": "project",
+      "capability": "QueueLess",
+      "evidence_statement": "QueueLess (fictional demo project): Django REST API for booking clinic queue slots.",
+      "state": "Not assessed",
+      "context": "Selected Projects",
+      "limitations": [
+        "Portfolio project, not commercial work.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Selected Projects"
+        }
+      ]
+    },
+    {
+      "evidence_id": "RESUME-012",
+      "category": "other",
+      "capability": "Achievement",
+      "evidence_statement": "Built a spreadsheet dashboard that tracked weekly maintenance requests at Contoso Facilities (fictional).",
+      "state": "Not assessed",
+      "context": "Achievements",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "resume",
+          "source_file": "synthetic_resume.md",
+          "source_reference": "Achievements"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-001",
+      "category": "project",
+      "capability": "PlantPal — full-stack app",
+      "evidence_statement": "Implemented a Django backend with React frontend, user accounts and scheduled reminders.",
+      "state": "Not assessed",
+      "context": "PlantPal (fictional)",
+      "limitations": [
+        "Do not claim commercial or production deployment.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "PlantPal"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-002",
+      "category": "project",
+      "capability": "PlantPal — testing",
+      "evidence_statement": "Wrote Django unit tests for models and views.",
+      "state": "Not assessed",
+      "context": "PlantPal (fictional)",
+      "limitations": [
+        "Test coverage limited to backend.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "PlantPal"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-003",
+      "category": "project",
+      "capability": "QueueLess — REST API",
+      "evidence_statement": "Built REST API endpoints with Django REST Framework, including token-based authentication.",
+      "state": "Not assessed",
+      "context": "QueueLess (fictional)",
+      "limitations": [
+        "Do not claim commercial or production deployment.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "QueueLess"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-004",
+      "category": "project",
+      "capability": "QueueLess — relational data",
+      "evidence_statement": "Designed a MySQL schema for bookings, slots and users with foreign keys.",
+      "state": "Not assessed",
+      "context": "QueueLess (fictional)",
+      "limitations": [
+        "Do not claim PostgreSQL experience.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "QueueLess"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-005",
+      "category": "project",
+      "capability": "PantryShare — frontend",
+      "evidence_statement": "Implemented a responsive React frontend for a community food-sharing listing.",
+      "state": "Not assessed",
+      "context": "PantryShare (fictional)",
+      "limitations": [
+        "Frontend only.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "PantryShare"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-006",
+      "category": "project",
+      "capability": "TinyLedger — data reporting",
+      "evidence_statement": "Wrote SQL queries and a simple Python script to summarise expenses into monthly CSV reports.",
+      "state": "Not assessed",
+      "context": "TinyLedger (fictional)",
+      "limitations": [
+        "No BI tool used.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "TinyLedger"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-007",
+      "category": "project",
+      "capability": "TrailNotes — API integration",
+      "evidence_statement": "Integrated a public weather REST API into a hiking-notes web app.",
+      "state": "Not assessed",
+      "context": "TrailNotes (fictional)",
+      "limitations": [
+        "Do not claim production reliability.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "TrailNotes"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-008",
+      "category": "methodology",
+      "capability": "Cross-project — version control",
+      "evidence_statement": "Used Git and GitHub with feature branches and pull requests across all projects.",
+      "state": "Not assessed",
+      "context": "Cross-project evidence",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "Cross-project"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-009",
+      "category": "methodology",
+      "capability": "Cross-project — documentation",
+      "evidence_statement": "Wrote README files and simple architecture notes for each project.",
+      "state": "Not assessed",
+      "context": "Cross-project evidence",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "Cross-project"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PORTFOLIO-010",
+      "category": "technical_skill",
+      "capability": "Cross-project — authentication",
+      "evidence_statement": "Implemented login, logout and permission checks in Django projects.",
+      "state": "Not assessed",
+      "context": "Cross-project evidence",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "portfolio",
+          "source_file": "synthetic_portfolio.md",
+          "source_reference": "Cross-project"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-001",
+      "category": "technical_skill",
+      "capability": "Python / Django",
+      "evidence_statement": "Python and Django used across several portfolio projects.",
+      "state": "PROVEN",
+      "context": "Software development",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Software development"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-002",
+      "category": "technical_skill",
+      "capability": "REST APIs",
+      "evidence_statement": "REST API design and consumption in portfolio projects.",
+      "state": "PROVEN",
+      "context": "Software development",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Software development"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-003",
+      "category": "technical_skill",
+      "capability": "SQL / relational databases",
+      "evidence_statement": "SQL queries and relational schema design with MySQL.",
+      "state": "PROVEN / FOUNDATION",
+      "context": "Data",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Data"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-004",
+      "category": "technical_skill",
+      "capability": "React / frontend",
+      "evidence_statement": "React components and responsive layouts.",
+      "state": "FOUNDATION",
+      "context": "Software development",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Software development"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-005",
+      "category": "tool",
+      "capability": "Git / GitHub",
+      "evidence_statement": "Daily use of Git and GitHub in projects.",
+      "state": "PROVEN",
+      "context": "Engineering practice",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Engineering practice"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-006",
+      "category": "tool",
+      "capability": "Docker",
+      "evidence_statement": "Followed a container tutorial; no project uses Docker yet.",
+      "state": "NEW / EXPOSURE",
+      "context": "Deployment",
+      "limitations": [
+        "Do not claim Docker experience.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Deployment"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-007",
+      "category": "tool",
+      "capability": "Power BI / dashboards",
+      "evidence_statement": "Built one practice dashboard in Power BI from a sample dataset.",
+      "state": "EXPOSURE",
+      "context": "Data",
+      "limitations": [
+        "Practice only.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Data"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-008",
+      "category": "tool",
+      "capability": "Cloud platforms (AWS / Azure)",
+      "evidence_statement": "Attended an introductory cloud session only.",
+      "state": "NONE yet",
+      "context": "Deployment",
+      "limitations": [
+        "No hands-on cloud deployment.",
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Deployment"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-009",
+      "category": "business_capability",
+      "capability": "Stakeholder coordination",
+      "evidence_statement": "Coordinated vendors and building users in an operations role.",
+      "state": "Transferable professional experience",
+      "context": "Business capability",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Business capability"
+        }
+      ]
+    },
+    {
+      "evidence_id": "CAPABILITY_MATRIX-010",
+      "category": "business_capability",
+      "capability": "Process documentation",
+      "evidence_statement": "Kept service records and wrote simple procedures in an operations role.",
+      "state": "Transferable / needs adaptation",
+      "context": "Business capability",
+      "limitations": [
+        "Synthetic example data for a fictional candidate."
+      ],
+      "sources": [
+        {
+          "source_type": "capability_matrix",
+          "source_file": "synthetic_capability_matrix.md",
+          "source_reference": "Business capability"
+        }
+      ]
+    }
+  ],
+  "extraction_warnings": [
+    "SYNTHETIC DATA: 'Casey Placeholder' is a fictional candidate. Every organisation, project and credential in this file is invented for demonstration and testing."
+  ]
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Assistant — Human Review Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app" class="dashboard-app">
+    <!-- Header Bar -->
+    <header class="top-header">
+      <div class="brand">
+        <h1>Career Assistant</h1>
+        <span class="subtitle">Human Decision Support Dashboard</span>
+      </div>
+      <div class="progress-section">
+        <div class="progress-labels">
+          <span class="progress-title">Review Progress</span>
+          <span id="progress-text" class="progress-count">0 / 0 Decided</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Toolbar & Filter Bar -->
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <div class="search-box">
+          <input type="text" id="search-input" class="search-input" placeholder="Search jobs...">
+        </div>
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-filter="all" id="tab-all">All <span class="badge-count" id="count-all">0</span></button>
+          <button class="tab-btn tab-high" data-filter="High" id="tab-high">★ High <span class="badge-count" id="count-high">0</span></button>
+          <button class="tab-btn tab-medium" data-filter="Medium" id="tab-medium">⚡ Medium <span class="badge-count" id="count-medium">0</span></button>
+          <button class="tab-btn tab-low" data-filter="Low" id="tab-low">⊝ Low <span class="badge-count" id="count-low">0</span></button>
+        </div>
+      </div>
+
+      <div class="view-toggle">
+        <label for="status-view-select">Status:</label>
+        <select id="status-view-select" class="dropdown">
+          <option value="REVIEW_PENDING" selected>Review Pending</option>
+          <option value="all">All Jobs</option>
+          <option value="APPLY_PENDING">Apply Pending</option>
+          <option value="COVER_LETTER_GENERATED">Cover Letter Generated</option>
+          <option value="APPLIED">Applied</option>
+          <option value="SKIPPED">Skipped</option>
+        </select>
+
+      </div>
+    </div>
+
+
+    <!-- Sticky Bulk Action Bar (When jobs are selected) -->
+    <div id="bulk-action-bar" class="bulk-action-bar hidden">
+      <div class="bulk-info">
+        <span class="bulk-icon">⚡</span>
+        <span id="bulk-selected-count">0 Jobs Selected</span>
+      </div>
+      <div class="bulk-actions">
+        <button id="btn-bulk-pursue" class="btn btn-pursue">➜ Pursue Selected</button>
+        <button id="btn-bulk-skip" class="btn btn-skip">✖ Skip Selected</button>
+        <button id="btn-bulk-clear" class="btn btn-secondary">Clear Selection</button>
+      </div>
+    </div>
+
+    <!-- Split Desktop Workspace -->
+    <main class="workspace-split">
+      <!-- LEFT COLUMN: Independent Scrollable Job Queue -->
+      <section class="queue-column">
+        <div class="queue-toolbar">
+          <label class="select-all-label">
+            <input type="checkbox" id="select-all-checkbox"> Select All
+          </label>
+          <span id="queue-subtitle" class="queue-subtitle">Showing active jobs</span>
+        </div>
+
+        <div id="job-list-container" class="job-list">
+          <!-- Dynamic Job Cards rendered here -->
+        </div>
+
+        <div id="empty-state" class="empty-state hidden">
+          <p class="empty-title">No jobs found</p>
+          <p class="empty-desc">All jobs in this filter have been processed or filtered out.</p>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN: Fixed Side Detail Panel -->
+      <section class="detail-column">
+        <!-- Neutral Placeholder when no job selected -->
+        <div id="detail-placeholder" class="detail-placeholder">
+          <div class="placeholder-icon">📋</div>
+          <h2>Select a job to review</h2>
+          <p>Click any job in the left queue to view details, inspect key matches/gaps, and take decisions.</p>
+        </div>
+
+        <!-- Active Selected Job Detail Panel -->
+        <div id="detail-panel" class="detail-panel hidden">
+          <div class="detail-header">
+            <div class="detail-title-group">
+              <div class="title-badge-row">
+                <span id="drawer-prio-badge" class="prio-badge">HIGH</span>
+                <span id="drawer-status" class="status-tag">REVIEW_PENDING</span>
+              </div>
+              <h2 id="drawer-role-title">Role Title</h2>
+              <div id="drawer-company" class="company-sub">Company Name</div>
+            </div>
+          </div>
+
+          <div class="detail-body">
+            <div class="meta-strip">
+              <div class="meta-item"><span class="label">Location:</span> <span id="drawer-location">-</span></div>
+              <div class="meta-item"><span class="label">Work Mode:</span> <span id="drawer-workmode">-</span></div>
+              <div class="meta-item"><a id="drawer-url-link" href="#" target="_blank" class="external-link">Open JobStreet Listing ↗</a></div>
+            </div>
+
+            <!-- COVER LETTER SECTION if APPLY_PENDING or COVER_LETTER_GENERATED -->
+            <div id="cover-letter-section" class="section-card cover-card hidden">
+              <div class="cover-card-header">
+                <h3>Cover Letter Workflow</h3>
+                <span id="cl-source-badge" class="draft-badge hidden">Draft source: AI-generated</span>
+              </div>
+              <div id="cl-status-msg" class="cl-status-msg"></div>
+
+              <button id="btn-generate-cl" class="btn btn-primary btn-block hidden">📄 Generate Tailored Cover Letter</button>
+              <div id="cl-spinner" class="spinner-group hidden">
+                <div class="spinner"></div>
+                <span>Drafting cover letter using verified evidence via GPT-OSS 20B...</span>
+              </div>
+
+              <div id="cl-editor-group" class="cl-editor-group hidden">
+                <label for="cl-text-area" class="editor-label">Cover Letter Markdown (Editable):</label>
+                <textarea id="cl-text-area" class="cl-textarea" rows="18"></textarea>
+                <div class="editor-actions">
+                  <button id="btn-copy-cl" class="btn btn-secondary">📋 Copy to Clipboard</button>
+                  <button id="btn-save-cl" class="btn btn-primary">💾 Save Edits</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Compact Legacy Notice if ALL analysis sections absent -->
+            <div id="legacy-full-notice" class="section-card legacy-full-card hidden">
+              <span class="text-muted-italic">Detailed match/gap analysis is unavailable for this legacy record.</span>
+            </div>
+
+            <div id="section-summary" class="section-card">
+              <h3>Executive Summary</h3>
+              <p id="drawer-summary" class="summary-text">-</p>
+            </div>
+
+            <div id="section-matches-gaps" class="grid-2col">
+              <div id="card-matches" class="section-card card-matches">
+                <h3>Key Matches</h3>
+                <ul id="drawer-matches-list" class="bullet-list"></ul>
+              </div>
+              <div id="card-gaps" class="section-card card-gaps">
+                <h3>Key Gaps</h3>
+                <ul id="drawer-gaps-list" class="bullet-list"></ul>
+              </div>
+            </div>
+
+            <div id="section-tracker-note" class="section-card">
+              <h3>Tracker Note</h3>
+              <div id="drawer-tracker-note" class="tracker-note-box">-</div>
+            </div>
+
+            <div class="accordion">
+              <button id="accordion-toggle" class="accordion-header">▶ View Raw Job Description Text</button>
+              <div id="accordion-content" class="accordion-body hidden">
+                <pre id="drawer-raw-text"></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-footer">
+            <button id="drawer-btn-skip" class="btn btn-skip btn-lg">✖ Skip Role</button>
+            <button id="drawer-btn-pursue" class="btn btn-pursue btn-lg">➜ Pursue Role</button>
+            <button id="drawer-btn-apply" class="btn btn-applied btn-lg hidden">✓ Mark Applied</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bulk Confirmation Modal -->
+    <div id="bulk-modal" class="modal hidden">
+      <div class="modal-overlay" id="modal-overlay"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h2 id="modal-title">Confirm Bulk Action</h2>
+          <button id="btn-close-modal" class="btn-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-notice" class="modal-notice"></div>
+          <div class="modal-table-container">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th class="col-checkbox">Inc</th>
+                  <th class="col-prio">Prio</th>
+                  <th class="col-role">Role & Company</th>
+                  <th class="col-note">Reason / Tracker Note</th>
+                </tr>
+              </thead>
+              <tbody id="modal-table-body">
+                <!-- Selected Jobs -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="btn-modal-cancel" class="btn btn-secondary">✕ Cancel / Abort</button>
+          <button id="btn-modal-confirm" class="btn btn-pursue">✓ Confirm Bulk Action</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mark Applied Confirmation Modal -->
+    <div id="apply-modal" class="modal hidden">
+      <div class="modal-overlay" id="apply-modal-overlay"></div>
+      <div class="modal-dialog modal-dialog-apply">
+        <div class="modal-header">
+          <h2>Mark Application as Submitted</h2>
+          <button id="btn-close-apply-modal" class="btn-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="apply-info-card">
+            <div class="apply-meta-row"><strong>Role:</strong> <span id="apply-role">-</span></div>
+            <div class="apply-meta-row"><strong>Company:</strong> <span id="apply-company">-</span></div>
+            <div class="apply-meta-grid">
+              <div><strong>Date Applied:</strong> <span id="apply-date">-</span></div>
+              <div><strong>Source:</strong> JobStreet</div>
+              <div><strong>Priority:</strong> <span id="apply-prio" class="prio-badge">-</span></div>
+              <div><strong>Portfolio Sent:</strong> Yes</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="apply-work-type">Work Type:</label>
+            <select id="apply-work-type" class="dropdown dropdown-block">
+              <option value="Full-time">Full-time</option>
+              <option value="Contract">Contract</option>
+              <option value="Temporary">Temporary</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Remote">Remote</option>
+              <option value="On-site">On-site</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="apply-url-input">Application URL (Prefilled with JobStreet URL; edit if redirected to ATS):</label>
+            <input type="url" id="apply-url-input" class="text-input" placeholder="https://...">
+          </div>
+
+          <div class="form-group">
+            <label for="apply-notes-input">Outcome / Tracker Notes:</label>
+            <textarea id="apply-notes-input" class="cl-textarea" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="btn-cancel-apply" class="btn btn-secondary">✕ Cancel</button>
+          <button id="btn-confirm-apply" class="btn btn-applied">✓ Confirm & Write Excel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

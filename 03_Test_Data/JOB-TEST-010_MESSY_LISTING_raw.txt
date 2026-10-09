@@ -1,0 +1,32 @@
+Systems & Automation Specialist
+
+Vertex Operations Lab
+
+Location: Singapore
+Employment type: Contract
+Salary: Up to S$5,500 monthly
+Posted: Today
+
+Small operations team seeking someone practical who can automate repetitive work,
+support internal systems and help improve day-to-day technical processes.
+
+Work from home some days, office presence required when needed.
+
+You should be comfortable with Python scripting, REST APIs, Excel and basic SQL.
+You will automate recurring reports, connect internal tools, investigate data issues,
+document workflows, assist users when internal applications fail and work with vendors
+when fixes are required.
+
+At least 2 years of relevant IT, systems, automation or technical operations experience.
+
+Need someone who can work independently, explain technical issues clearly and learn
+unfamiliar tools quickly.
+
+Diploma or degree in IT, computing or engineering preferred, but equivalent practical
+experience will also be considered.
+
+Nice if you know PowerShell, Power Automate, Git or cloud services.
+
+Microsoft Power Platform certification would be useful but is not mandatory.
+
+Occasional after-hours support may be required during system changes.

@@ -1,0 +1,35 @@
+Data Analyst
+
+NorthStar Retail Analytics Pte. Ltd.
+
+Location: Singapore
+Employment type: Full time
+Salary: S$4,500 - S$6,000 per month
+Posted: 1d ago
+
+Work arrangement: Hybrid, with three days per week in the office.
+
+### Responsibilities
+
+- Analyse sales, customer, and operational data to identify trends and business opportunities.
+- Build and maintain dashboards using Power BI.
+- Write SQL queries to extract, transform, and validate data.
+- Work with business stakeholders to define reporting requirements and KPIs.
+- Perform data quality checks and investigate inconsistencies.
+- Present findings clearly to technical and non-technical stakeholders.
+
+### Requirements
+
+- 2+ years of experience in data analytics, business intelligence, or a related role.
+- Strong SQL skills.
+- Proficiency in Power BI.
+- Good working knowledge of Excel.
+- Ability to interpret data and communicate findings clearly.
+- Strong analytical and problem-solving skills.
+- Diploma or Degree in Data Analytics, Computer Science, Statistics, Business Analytics, or a related discipline.
+
+### Preferred
+
+- Experience with Python or pandas.
+- Exposure to cloud data platforms such as AWS or Azure.
+- Experience working with retail or e-commerce data.

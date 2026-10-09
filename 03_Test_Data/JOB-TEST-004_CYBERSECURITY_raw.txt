@@ -1,0 +1,39 @@
+Cybersecurity Analyst
+
+Sentinel Cyber Defence Pte. Ltd.
+
+Location: Singapore
+Employment type: Full time
+Salary: Salary undisclosed
+Posted: 4d ago
+
+This is an on-site position.
+
+### Key Responsibilities
+
+- Monitor security alerts and investigate suspicious activity.
+- Perform initial triage of cybersecurity incidents.
+- Analyse logs from SIEM, endpoint, firewall, and network security platforms.
+- Support vulnerability management activities.
+- Assist with incident response and post-incident documentation.
+- Maintain security procedures and operational documentation.
+- Work with infrastructure and application teams on remediation activities.
+
+### Candidate Requirements
+
+- 2–4 years of experience in cybersecurity operations, SOC, incident response, or security monitoring.
+- Hands-on experience with SIEM platforms.
+- Understanding of network security, firewalls, endpoint protection, and common attack techniques.
+- Familiarity with vulnerability management processes.
+- Strong analytical and troubleshooting skills.
+- Able to communicate clearly during security incidents.
+
+### Qualifications
+
+- Diploma or Degree in Cybersecurity, Information Technology, Computer Science, or related field.
+
+### Advantageous
+
+- Security+, CEH, or equivalent cybersecurity certification.
+- Experience with Microsoft Sentinel.
+- Knowledge of MITRE ATT&CK.

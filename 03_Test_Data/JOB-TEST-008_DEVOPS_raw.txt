@@ -1,0 +1,42 @@
+Cloud DevOps Engineer
+
+Nimbus Platform Engineering Pte. Ltd.
+
+Location: Singapore
+Employment type: Full time
+Salary: S$6,000 - S$8,500 per month
+Posted: 1d ago
+
+This role follows a hybrid work model.
+
+### Responsibilities
+
+- Build and maintain CI/CD pipelines.
+- Manage cloud infrastructure on AWS.
+- Develop Infrastructure-as-Code using Terraform.
+- Deploy and operate containerised workloads using Docker and Kubernetes.
+- Monitor platform availability, performance, and reliability.
+- Automate operational tasks using scripting.
+- Support development teams with deployment and environment issues.
+- Participate in incident troubleshooting and root-cause analysis.
+
+### Required Experience and Skills
+
+- 3+ years of experience in DevOps, cloud engineering, platform engineering, or related work.
+- Hands-on AWS experience.
+- Strong experience with CI/CD pipelines.
+- Experience with Terraform.
+- Experience with Docker and Kubernetes.
+- Familiarity with Linux administration.
+- Scripting experience using Python, Bash, or similar languages.
+- Understanding of networking and cloud-security fundamentals.
+
+### Preferred
+
+- AWS Solutions Architect, AWS SysOps, or similar AWS certification.
+- Experience with GitHub Actions or GitLab CI.
+- Experience with monitoring tools such as Prometheus and Grafana.
+
+### Education
+
+Degree in Computer Science, Information Technology, Engineering, or related discipline preferred.

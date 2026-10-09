@@ -1,0 +1,40 @@
+Application Operations Support Analyst
+
+HarbourTech Systems Pte. Ltd.
+
+Location: Singapore
+Employment type: 12-month contract
+Salary: S$4,000 - S$5,200 per month
+Posted: 3d ago
+
+This position is on-site and supports a 24x7 production environment.
+
+### Responsibilities
+
+- Monitor production applications and scheduled jobs.
+- Investigate application alerts and service incidents.
+- Perform first-level troubleshooting and incident escalation.
+- Coordinate with application-development and infrastructure teams during outages.
+- Execute approved operational procedures and recovery steps.
+- Maintain incident records and operational documentation.
+- Participate in service-restoration and post-incident activities.
+
+### Requirements
+
+- 2+ years of experience in application support, production support, or IT operations.
+- Experience supporting enterprise applications in production environments.
+- Basic SQL knowledge.
+- Familiarity with Linux or Unix command-line environments.
+- Understanding of incident-management processes.
+- Strong troubleshooting and communication skills.
+
+### Additional Requirements
+
+- Must be willing to work rotating shifts, including nights, weekends, and public holidays.
+- Must be eligible to work in Singapore without employer-sponsored work authorisation.
+- Participation in an on-call roster is required.
+
+### Preferred
+
+- ITIL certification.
+- Experience in financial-services technology environments.

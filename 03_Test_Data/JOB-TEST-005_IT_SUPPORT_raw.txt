@@ -1,0 +1,40 @@
+IT Support Engineer
+
+BrightPath Services Pte. Ltd.
+
+Location: Jurong East, Singapore
+Employment type: Full time
+Salary: S$3,200 - S$4,200 per month
+Posted: 5d ago
+
+The role is primarily on-site.
+
+### Responsibilities
+
+- Provide Level 1 and Level 2 support for end users.
+- Troubleshoot Windows laptops, desktops, printers, and mobile devices.
+- Support Microsoft 365 applications and user accounts.
+- Perform Active Directory account administration.
+- Install approved software and hardware.
+- Track incidents and service requests using the IT service desk system.
+- Escalate complex issues to infrastructure or application support teams.
+- Maintain IT asset and support documentation.
+
+### Requirements
+
+- 1–3 years of IT support, desktop support, or service desk experience.
+- Good knowledge of Windows 10/11.
+- Experience supporting Microsoft 365.
+- Familiarity with Active Directory.
+- Basic understanding of TCP/IP and networking.
+- Strong customer-service and troubleshooting skills.
+- Able to communicate clearly with non-technical users.
+
+### Education
+
+- Diploma in Information Technology, Computer Engineering, or related discipline.
+
+### Nice to Have
+
+- ITIL Foundation certification.
+- Experience with Intune or endpoint-management tools.

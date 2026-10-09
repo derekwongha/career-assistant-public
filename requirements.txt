@@ -1,0 +1,13 @@
+# Runtime dependencies: third-party packages imported by the application code.
+# No versions are pinned. Developed and run with Python 3.11.
+beautifulsoup4
+google-api-python-client
+google-auth
+google-auth-oauthlib
+openpyxl
+playwright
+pydantic
+requests
+
+# Test runner for the offline test suite (see README "Tests").
+pytest
